@@ -115,6 +115,28 @@ K_{ij} = x_i^\top x_j
 - **Precision & Recall**: Summaries of precision and recall highlight whether the model predicts specific classes effectively.
 - **Top-10** approach**: Sometimes competes well with KPCA or PCA, but typically less flexible or sophisticated than kernel methods.
 
+![image](https://github.com/user-attachments/assets/82dba2de-6b1c-4f07-99d1-4216a71ee708)
+
+
+
+![image](https://github.com/user-attachments/assets/c16cdfef-f275-41d6-b2fe-809036ebde4e)
+
+
+
+=== Best Results Summary ===
+KNN        | NoRed      | k=fixed | Acc=0.5043, Prec=0.4058, Rec=0.5043
+KNN        | Top10      | k=fixed | Acc=0.5043, Prec=0.4223, Rec=0.5043
+KNN        | PCA        | k=   5 | Acc=0.5217, Prec=0.4606, Rec=0.5217
+KNN        | KPCA_RBF   | k=   2 | Acc=0.5652, Prec=0.3195, Rec=0.5652
+KNN        | KPCA_Poly  | k=   5 | Acc=0.5304, Prec=0.4615, Rec=0.5304
+KNN        | KPCA_Lin   | k=   5 | Acc=0.5217, Prec=0.4606, Rec=0.5217
+NaiveBayes | NoRed      | k=fixed | Acc=0.1826, Prec=0.6468, Rec=0.1826
+NaiveBayes | Top10      | k=fixed | Acc=0.3391, Prec=0.3831, Rec=0.3391
+NaiveBayes | PCA        | k=   1 | Acc=0.5652, Prec=0.3195, Rec=0.5652
+NaiveBayes | KPCA_RBF   | k=   1 | Acc=0.5652, Prec=0.3195, Rec=0.5652
+NaiveBayes | KPCA_Poly  | k=   1 | Acc=0.5739, Prec=0.4487, Rec=0.5739
+NaiveBayes | KPCA_Lin   | k=   1 | Acc=0.5652, Prec=0.3195, Rec=0.5652
+
 ---
 
 ## Conclusion
